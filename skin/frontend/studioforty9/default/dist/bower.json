@@ -1,0 +1,20 @@
+{
+  "name": "studioforty9",
+  "version": "0.0.1",
+  "authors": [
+    "Colin Murphy <colin@studioforty9.com>"
+  ],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "build/node_modules",
+    "build/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass-official": "~3.3",
+    "font-awesome": "~4.2",
+    "jquery-colorbox": "*"
+  }
+}

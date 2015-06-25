@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<theme>
+    <parent>rwd/default</parent>
+    <layout>
+        <updates>
+            <hickeys>
+                <file>studioforty9.xml</file>
+            </hickeys>
+        </updates>
+    </layout>
+</theme>

@@ -1,0 +1,16 @@
+{
+  "devDependencies": {
+    "gulp": "*",
+    "gulp-autoprefixer": "*",
+    "gulp-bless": "*",
+    "gulp-cache": "*",
+    "gulp-concat": "*",
+    "gulp-jshint": "*",
+    "gulp-compass": "*",
+    "gulp-livereload": "*",
+    "gulp-minify-css": "*",
+    "gulp-notify": "*",
+    "gulp-uglify": "*",
+    "gulp-watch": "*"
+  }
+}

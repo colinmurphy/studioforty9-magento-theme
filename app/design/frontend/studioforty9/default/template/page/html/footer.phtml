@@ -1,0 +1,10 @@
+<div class="footer-container">
+    <div class="footer">
+        <?php echo $this->getChildHtml() ?>
+        <address class="copyright"><?php echo $this->getCopyright() ?></address>
+    </div>
+</div>
+<?php if (Mage::helper('core/http')->getRemoteAddr() === '127.0.0.1') : ?>
+	<script type="text/javascript">document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+<?php endif; ?>
+
