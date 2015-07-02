@@ -1,5 +1,197 @@
-@import url('ie9-blessed1.css?z=1435604330681');
+@import url('ie9-blessed1.css?z=1435867707921');
 
+.gift-messages-form .item .product-img-box {
+  width: auto;
+  float: left;
+  padding-right: 15px;
+}
+.gift-messages-form .item .details {
+  float: left;
+}
+
+.gift-message-form .inner-box > div {
+  content: '';
+  display: table;
+  clear: both;
+  width: 100%;
+  margin-top: 15px;
+  display: block;
+}
+.gift-message-form .inner-box > div.extra-options-container p {
+  margin-bottom: 15px;
+}
+.gift-message-form .gift-wrapping-form label {
+  margin-right: 10px;
+}
+.gift-message-form .gift-wrapping-form img {
+  float: left;
+}
+.gift-message-form .gift-wrapping-form .gift-wrapping-design {
+  height: 75px;
+}
+.gift-message-form .gift-wrapping-form .gift-wrapping-design:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.gift-message-form .gift-wrapping-form .gift-wrapping-design .image-box {
+  margin-right: 5px;
+}
+.gift-message-form .gift-item {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: solid 1px #ECECEC;
+}
+.gift-message-form .gift-item:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.gift-message-form .gift-item .product-img-box {
+  width: 200px;
+}
+.gift-message-form .gift-item .product-img-box .product-image {
+  width: 75px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.gift-message-form .gift-item .product-img-box .product-name {
+  display: block;
+}
+.gift-message-form .gift-item .fieldset {
+  margin-left: 200px;
+}
+
+@media only screen and (max-width: 767px) {
+  .gift-message-form .giftmessage-area {
+    max-width: 100%;
+  }
+  .gift-message-form .gift-item .product-img-box {
+    width: 100%;
+    float: none;
+  }
+  .gift-message-form .gift-item .fieldset {
+    margin-left: 0px;
+  }
+  .gift-message-form .gift-item .fieldset textarea {
+    width: 100%;
+  }
+}
+/* ============================================ *
+ * Checkout - Success
+ * ============================================ */
+.checkout-onepage-success .col-main {
+  padding: 0;
+  text-align: center;
+}
+.checkout-onepage-success .buttons-set {
+  margin: 10px 0;
+  text-align: center;
+}
+.checkout-onepage-success .buttons-set button {
+  float: none;
+}
+
+/* ============================================ *
+ * Configurable Swatches
+ * ============================================ */
+/* Clears */
+.clearfix:after,
+.configurable-swatch-list:after,
+.product-view .product-options .swatch-attr:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* General Swatch Styling */
+.swatch-link,
+.swatch-label {
+  display: block;
+  border-radius: 3px;
+  font-size: 14px;
+  text-align: center;
+  color: #636363;
+  text-decoration: none;
+  box-sizing: content-box;
+}
+
+.swatch-link {
+  border: 1px solid #CCCCCC;
+  margin: 0 0 3px;
+}
+.swatch-link img {
+  border-radius: 2px;
+}
+.swatch-link:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+.swatch-link .x {
+  display: none;
+  text-indent: -999em;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: url(../images/bg_x.png) center no-repeat transparent;
+  z-index: 10;
+}
+.swatch-link.has-image .swatch-label {
+  position: relative;
+}
+.swatch-link.has-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.swatch-label {
+  border: 1px solid #fff;
+  margin: 0;
+  white-space: nowrap;
+  background: #F4F4F4;
+}
+
+.configurable-swatch-list {
+  margin-left: -3px;
+  zoom: 1;
+  clear: both;
+  -webkit-transform: translateZ(0px);
+}
+.configurable-swatch-list li {
+  float: left;
+  zoom: 1;
+  margin: 0 0 0 3px;
+}
+.products-grid .configurable-swatch-list li {
+  display: inline-block;
+  float: none;
+  margin: 0;
+  vertical-align: top;
+}
+.configurable-swatch-list .not-available .x {
+  display: block;
+}
+.configurable-swatch-list .not-available .swatch-link {
+  border-color: #EDEDED;
+  position: relative;
+}
+.configurable-swatch-list .not-available .swatch-link.has-image img {
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+}
+.configurable-swatch-list .not-available .swatch-label {
+  color: #aaa;
+  background: #fff;
+}
+.configurable-swatch-list .wide-swatch .swatch-label {
+  padding: 0 6px;
+}
+.configurable-swatch-list .not-available a:focus {
+  outline: 0;
+}
 
 #narrow-by-list dd .configurable-swatch-list li {
   margin: 0 0 0 3px;

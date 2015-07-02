@@ -78,13 +78,6 @@ $element-spacing: 7px;
 $max-content-width: 1200px;
 $max-container-width: $trim + $max-content-width + $trim;
 $max-std-formatted-width: 50em;
-
-// Twitter Bootstrap Container
-.container {
-    max-width: 100%;
-    width: $screen-lg - $grid-gutter-width;
-    }
-
 // =============================================
 // Brand Colors
 // =============================================
