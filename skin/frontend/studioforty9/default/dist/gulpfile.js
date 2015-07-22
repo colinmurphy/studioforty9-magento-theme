@@ -29,17 +29,13 @@ gulp.task('css', function() {
             cssCompiling = false;
             return 'Error compiling SASS: ' + error.message;
         })))
-        .pipe(autoprefixer({
-            browsers: ['last 3 versions'],
-            cascade: false
-        }))
+        .pipe(autoprefixer('last 10 versions'))
 
     if (config.minifyCss === true) {
         stream.pipe(minifycss());
     }
 
     stream.pipe(gulp.dest('../css'))
-        .pipe(livereload())
         .pipe(notify({ message: 'Successfully compiled SASS' }));
 
     if (config.compileIE9 === true) {
