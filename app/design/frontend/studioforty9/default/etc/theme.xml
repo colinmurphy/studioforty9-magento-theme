@@ -3,9 +3,9 @@
     <parent>rwd/default</parent>
     <layout>
         <updates>
-            <hickeys>
+            <studioforty9>
                 <file>studioforty9.xml</file>
-            </hickeys>
+            </studioforty9>
         </updates>
     </layout>
 </theme>
