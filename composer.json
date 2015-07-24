@@ -1,0 +1,27 @@
+{
+  "name": "colinmurphy/studioforty9-magento-theme",
+  "description": "StudioForty9 theme based off RWD.",
+  "type": "magento-module",
+  "license": "BSD-3-Clause",
+  "homepage": "https://github.com/colinmurphy/studioforty9-magento-theme",
+  "keywords": ["magento", "theme", "rwd"],
+  "authors": [
+    {
+      "name": "Colin Murphy",
+      "email": "colin@studioforty9.com",
+      "homepage": "http://www.studioforty9.com/",
+      "role": "developer"
+    }
+  ],
+  "source": {
+    "url": "https://github.com/colinmurphy/studioforty9-magento-theme.git",
+    "type": "git",
+    "reference": "origin/master"
+  },
+  "extra": {
+    "map": [
+      ["app/design/frontend/studioforty9/default", "app/design/frontend/studioforty9/default"],
+      ["skin/frontend/studioforty9/default", "skin/frontend/studioforty9/default"]
+    ]
+  }
+}
