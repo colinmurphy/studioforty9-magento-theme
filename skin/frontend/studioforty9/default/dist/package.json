@@ -6,7 +6,7 @@
     "gulp-cache": "*",
     "gulp-concat": "*",
     "gulp-jshint": "*",
-    "gulp-compass": "*",
+    "gulp-sass": "*",
     "gulp-livereload": "*",
     "gulp-minify-css": "*",
     "gulp-notify": "*",

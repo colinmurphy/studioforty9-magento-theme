@@ -1,7 +1,7 @@
 // Load plugins
 var
     gulp            = require('gulp'),
-    compass         = require('gulp-compass'),
+    sass            = require('gulp-sass'),
     autoprefixer    = require('gulp-autoprefixer'),
     bless           = require('gulp-bless'),
     minifycss       = require('gulp-minify-css'),
@@ -14,7 +14,18 @@ var
 var config = {
     minifyCss: true,
     uglifyJS: true,
-    compileIE9: true
+    compileIE9: true,
+    sass: {
+        src:  '/scss/**/*.{sass,scss}',
+        dest:  '../css',
+        options: {
+            noCache: true,
+            compass: false,
+            bundleExec: true,
+            sourcemap: true,
+            sourcemapPath: '/scss/**/*.{sass,scss}'
+        }
+    }
 }
 
 // CSS
@@ -22,14 +33,13 @@ gulp.task('css', function() {
 
     var stream = gulp
         .src('scss/styles.scss')
-        .pipe(compass({
-            css: '../css',
-            sass: './scss'
-        }).on('error', notify.onError(function (error) {
+        .pipe(sass(config.sass.options)
+            .on('error', notify.onError(function (error) {
             cssCompiling = false;
             return 'Error compiling SASS: ' + error.message;
         })))
         .pipe(autoprefixer('last 10 versions'))
+        .pipe(gulp.dest(config.sass.dest));
 
     if (config.minifyCss === true) {
         stream.pipe(minifycss());
@@ -48,12 +58,11 @@ gulp.task('css', function() {
 gulp.task('ie9', function() {
     var stream = gulp
         .src('scss/ie9.scss')
-        .pipe(compass({
-            css: '../css',
-            sass: './scss'
-        }).on('error', notify.onError(function (error) {
-            return 'Error compiling SASS: ' + error.message;
-        })))
+        .pipe(sass(config.sass.options)
+            .on('error', notify.onError(function (error) {
+                cssCompiling = false;
+                return 'Error compiling SASS: ' + error.message;
+            })))
         .pipe(autoprefixer({
             browsers: ['last 3 versions'],
             cascade: false

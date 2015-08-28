@@ -1,0 +1,19 @@
+// Contains mixins to replace Compass and improve compile time :)
+@mixin appearance($value) {
+    appearance: $value;
+    }
+
+@mixin border-radius($value) {
+    border-radius: $value;
+    }
+
+@mixin inline-block() {
+    display: inline-block;
+    }
+
+@mixin single-transition($property: all, $duration: 1s, $function: false, $delay: false){
+    $default-transition-property : $property;
+    $default-transition-duration : $duration;
+    $default-transition-function : $function;
+    $default-transition-delay    : $delay;
+    }
