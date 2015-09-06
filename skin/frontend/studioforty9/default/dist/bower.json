@@ -1,6 +1,6 @@
 {
   "name": "studioforty9",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "authors": [
     "Colin Murphy <colin@studioforty9.com>"
   ],
@@ -14,6 +14,6 @@
   ],
   "dependencies": {
     "bootstrap-sass-official": "~3.3",
-    "font-awesome": "~4.3"
+    "font-awesome": "~4.4"
   }
 }

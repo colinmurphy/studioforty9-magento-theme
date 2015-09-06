@@ -71,11 +71,6 @@ gulp.task('ie9', function() {
         stream.pipe(gulp.dest('../css'));
 });
 
-// Alias for convenience
-gulp.task('sass', function() {
-    gulp.start('css');
-});
-
 // JS
 gulp.task('js', function() {
 
@@ -98,7 +93,7 @@ gulp.task('js', function() {
 });
 
 // Default task
-gulp.task('default', ['watch']);
+gulp.task('default', ['css', 'js']);
 
 // Watch
 gulp.task('watch', function() {
