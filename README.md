@@ -13,28 +13,24 @@ This is a Magento child theme of RWD theme that uses twitter bootstrap with the 
 You need the following libraries globally installed on your computer:
 
 1. [Node](https://nodejs.org/download/)
-2. [Ruby](https://www.ruby-lang.org/en/documentation/installation/)
-3. [Compass](http://compass-style.org/install/)
 
 If you already have (Homebrew)[http://brew.sh/] you run the following:
 
     brew install node
-    brew install ruby
-    gem install compass
-    
+
 # 2. Setup
 
 Once you have copied the theme in your Magento install you need to download the bower and node packages.
 To do this you need to do the following from your project root:
 
-    cd skin/frontend/studioforty9/dist/
+    cd skin/frontend/studioforty9/default/dist/
     npm install
     bower install
     
 # 3. Gulp
 
 Once you have the theme setup gulp is ready to go using live reload to automatically compile and refresh your CSS and JavaScript files when marking up.
-To run these commands you need to cd into the *skin/frontend/studioforty9/dist directory*.
+To run these commands you need to cd into the *skin/frontend/studioforty9/default/dist* directory.
 
 You then can run the following
 
@@ -68,6 +64,11 @@ Within your gulp file there are 3 options
 3. **compileIE9:** Whether to compile your ie9 stylesheets when running gulp or gulp sass. Default: true
 
 
+### 3.6 PHPStorm
+
+If you are using PHPStorm you should find the gulpfile.js in the project view and right click and select "Show Gulp Tasks".
+This will now allow you to run the gulpfile from PHPStorm which is quite useful.
+
 ## 4. SASS
 
 This theme was built so you should edit the scss file copied over from RWD. 
@@ -80,8 +81,12 @@ Finally it should be noted that the only change in the RWD theme was to the resp
 
 The variable *$bp-medium* was changed from 770px to 767px to work better with twitter bootstrap in the _vars.scss file.
 
+### 5. JavaScript
+
+In the gulpfile there is an array of javascript files. If you for instance wanted to include twitter bootstrap js libraries you could add to this array.
+
+
 ## 6. Live Reload
 
 This themes use live reload to speed up the development process. Its adds the javascript for observing the files in the footer for localhost servers.
 If you need to remove this you can do so here.
-
