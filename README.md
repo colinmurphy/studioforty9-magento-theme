@@ -23,7 +23,7 @@ If you already have (Homebrew)[http://brew.sh/] you run the following:
 Once you have copied the theme in your Magento install you need to download the bower and node packages.
 To do this you need to do the following from your project root:
 
-    cd skin/frontend/studioforty9/default/dist/
+    cd skin/frontend/studioforty9/default/src/
     npm install
     bower install
     
