@@ -30,7 +30,7 @@ To do this you need to do the following from your project root:
 # 3. Gulp
 
 Once you have the theme setup gulp is ready to go using live reload to automatically compile and refresh your CSS and JavaScript files when marking up.
-To run these commands you need to cd into the *skin/frontend/studioforty9/default/dist* directory.
+To run these commands you need to cd into the *skin/frontend/studioforty9/default/src* directory.
 
 You then can run the following
 
@@ -72,7 +72,7 @@ This will now allow you to run the gulpfile from PHPStorm which is quite useful.
 ## 4. SASS
 
 This theme was built so you should edit the scss file copied over from RWD. 
-However there is _theme partial file and theme directory under *dist/scss* add to the original RWD scss directory.
+However there is _theme partial file and theme directory under *src/scss* add to the original RWD scss directory.
 
 The purpose of this was to allow the developer extend the RWD theme and add in new components and also if the package has multiple themes a developer could have different _theme partial files.
 If for some reason you need to remove twitter bootstrap or font awesome you can do so in this partial file.

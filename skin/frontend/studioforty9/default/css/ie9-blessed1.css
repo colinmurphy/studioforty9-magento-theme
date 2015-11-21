@@ -3186,15 +3186,15 @@ a.label:focus {
     display: none !important; } }
 
 /*!
- *  Font Awesome 4.3.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  Font Awesome 4.4.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
  */
 /* FONT PATH
  * -------------------------- */
 @font-face {
   font-family: 'FontAwesome';
-  src: url("../fonts/fontawesome-webfont.eot?v=4.3.0");
-  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.3.0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.3.0") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.3.0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.3.0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular") format("svg");
+  src: url("../fonts/fontawesome-webfont.eot?v=4.4.0");
+  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.4.0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.4.0") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.4.0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.4.0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.4.0#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -3204,10 +3204,7 @@ a.label:focus {
   font-size: inherit;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-transform: translate(0, 0);
-  -ms-transform: translate(0, 0);
-  transform: translate(0, 0); }
+  -moz-osx-font-smoothing: grayscale; }
 
 /* makes the font 33% larger relative to the icon container */
 .fa-lg {
@@ -3252,6 +3249,19 @@ a.label:focus {
   border: solid 0.08em #eee;
   border-radius: .1em; }
 
+.fa-pull-left {
+  float: left; }
+
+.fa-pull-right {
+  float: right; }
+
+.fa.fa-pull-left {
+  margin-right: .3em; }
+
+.fa.fa-pull-right {
+  margin-left: .3em; }
+
+/* Deprecated as of 4.4.0 */
 .pull-right {
   float: right; }
 
@@ -3811,6 +3821,7 @@ a.label:focus {
 .fa-credit-card:before {
   content: ""; }
 
+.fa-feed:before,
 .fa-rss:before {
   content: ""; }
 
@@ -4692,6 +4703,8 @@ a.label:focus {
 .fa-git:before {
   content: ""; }
 
+.fa-y-combinator-square:before,
+.fa-yc-square:before,
 .fa-hacker-news:before {
   content: ""; }
 
@@ -4716,7 +4729,6 @@ a.label:focus {
 .fa-history:before {
   content: ""; }
 
-.fa-genderless:before,
 .fa-circle-thin:before {
   content: ""; }
 
@@ -4921,6 +4933,7 @@ a.label:focus {
 .fa-mercury:before {
   content: ""; }
 
+.fa-intersex:before,
 .fa-transgender:before {
   content: ""; }
 
@@ -4947,6 +4960,9 @@ a.label:focus {
 
 .fa-neuter:before {
   content: ""; }
+
+.fa-genderless:before {
+  content: ""; }
 
 .fa-facebook-official:before {
   content: ""; }
@@ -4981,6 +4997,213 @@ a.label:focus {
 
 .fa-medium:before {
   content: ""; }
+
+.fa-yc:before,
+.fa-y-combinator:before {
+  content: ""; }
+
+.fa-optin-monster:before {
+  content: ""; }
+
+.fa-opencart:before {
+  content: ""; }
+
+.fa-expeditedssl:before {
+  content: ""; }
+
+.fa-battery-4:before,
+.fa-battery-full:before {
+  content: ""; }
+
+.fa-battery-3:before,
+.fa-battery-three-quarters:before {
+  content: ""; }
+
+.fa-battery-2:before,
+.fa-battery-half:before {
+  content: ""; }
+
+.fa-battery-1:before,
+.fa-battery-quarter:before {
+  content: ""; }
+
+.fa-battery-0:before,
+.fa-battery-empty:before {
+  content: ""; }
+
+.fa-mouse-pointer:before {
+  content: ""; }
+
+.fa-i-cursor:before {
+  content: ""; }
+
+.fa-object-group:before {
+  content: ""; }
+
+.fa-object-ungroup:before {
+  content: ""; }
+
+.fa-sticky-note:before {
+  content: ""; }
+
+.fa-sticky-note-o:before {
+  content: ""; }
+
+.fa-cc-jcb:before {
+  content: ""; }
+
+.fa-cc-diners-club:before {
+  content: ""; }
+
+.fa-clone:before {
+  content: ""; }
+
+.fa-balance-scale:before {
+  content: ""; }
+
+.fa-hourglass-o:before {
+  content: ""; }
+
+.fa-hourglass-1:before,
+.fa-hourglass-start:before {
+  content: ""; }
+
+.fa-hourglass-2:before,
+.fa-hourglass-half:before {
+  content: ""; }
+
+.fa-hourglass-3:before,
+.fa-hourglass-end:before {
+  content: ""; }
+
+.fa-hourglass:before {
+  content: ""; }
+
+.fa-hand-grab-o:before,
+.fa-hand-rock-o:before {
+  content: ""; }
+
+.fa-hand-stop-o:before,
+.fa-hand-paper-o:before {
+  content: ""; }
+
+.fa-hand-scissors-o:before {
+  content: ""; }
+
+.fa-hand-lizard-o:before {
+  content: ""; }
+
+.fa-hand-spock-o:before {
+  content: ""; }
+
+.fa-hand-pointer-o:before {
+  content: ""; }
+
+.fa-hand-peace-o:before {
+  content: ""; }
+
+.fa-trademark:before {
+  content: ""; }
+
+.fa-registered:before {
+  content: ""; }
+
+.fa-creative-commons:before {
+  content: ""; }
+
+.fa-gg:before {
+  content: ""; }
+
+.fa-gg-circle:before {
+  content: ""; }
+
+.fa-tripadvisor:before {
+  content: ""; }
+
+.fa-odnoklassniki:before {
+  content: ""; }
+
+.fa-odnoklassniki-square:before {
+  content: ""; }
+
+.fa-get-pocket:before {
+  content: ""; }
+
+.fa-wikipedia-w:before {
+  content: ""; }
+
+.fa-safari:before {
+  content: ""; }
+
+.fa-chrome:before {
+  content: ""; }
+
+.fa-firefox:before {
+  content: ""; }
+
+.fa-opera:before {
+  content: ""; }
+
+.fa-internet-explorer:before {
+  content: ""; }
+
+.fa-tv:before,
+.fa-television:before {
+  content: ""; }
+
+.fa-contao:before {
+  content: ""; }
+
+.fa-500px:before {
+  content: ""; }
+
+.fa-amazon:before {
+  content: ""; }
+
+.fa-calendar-plus-o:before {
+  content: ""; }
+
+.fa-calendar-minus-o:before {
+  content: ""; }
+
+.fa-calendar-times-o:before {
+  content: ""; }
+
+.fa-calendar-check-o:before {
+  content: ""; }
+
+.fa-industry:before {
+  content: ""; }
+
+.fa-map-pin:before {
+  content: ""; }
+
+.fa-map-signs:before {
+  content: ""; }
+
+.fa-map-o:before {
+  content: ""; }
+
+.fa-map:before {
+  content: ""; }
+
+.fa-commenting:before {
+  content: ""; }
+
+.fa-commenting-o:before {
+  content: ""; }
+
+.fa-houzz:before {
+  content: ""; }
+
+.fa-vimeo:before {
+  content: ""; }
+
+.fa-black-tie:before {
+  content: ""; }
+
+.fa-fonticons:before {
+  content: ""; }
 
 /*
 // ----------------------------------------------
@@ -10797,277 +11020,3 @@ p.product-name {
   @media only screen and (max-width: 979px) {
     .opc .section .step {
       padding: 10px; } }
-
-.opc select {
-  max-width: 365px;
-  width: 100%; }
-
-.opc h3 {
-  font-weight: 500; }
-
-.opc .buttons-set {
-  text-align: left; }
-  .opc .buttons-set button.button {
-    float: left;
-    margin-left: 0;
-    margin-right: 10px;
-    margin-bottom: 0; }
-  .opc .buttons-set p.required {
-    float: right;
-    margin-left: 5px;
-    margin-bottom: 0; }
-  .opc .buttons-set .back-link {
-    float: right;
-    margin: 0; }
-  .opc .buttons-set a {
-    line-height: 20px;
-    display: inline-block;
-    padding: 5px 5px 5px 0; }
-
-@media only screen and (max-width: 479px) {
-  .opc .buttons-set .button + .buttons-set .button,
-  .paypal-express-review .buttons-set .button + .buttons-set .button {
-    margin-left: 0; } }
-
-.opc #opc-login .step {
-  padding: 0px; }
-
-.opc #opc-login .buttons-set {
-  border-top: 0;
-  padding-top: 5px; }
-
-@media only screen and (max-width: 767px) {
-  .opc #opc-login .description,
-  .opc #opc-login p.required {
-    display: none; } }
-
-#opc-payment .note {
-  padding: 10px; }
-
-/* -------------------------------------------- *
- * This section hides everything but the "Checkout Method" step of the checkout process and fades in the content
- * once the customer progresses to the next step. The purpose of this is to simplify what the customer has to focus on.
- * It is limited to larger viewports since smaller devices are inherently going to be focused solely on the
- * "Checkout Method" step.
- */
-/* When a user progresses from the "Checkout Method" to "Billing Information" for the first time, the              */
-/* "opc-has-progressed-from-login" class gets added to the body. Also, the .opc element will only have the         */
-/* "opc-firststep-login" class if the first step of the checkout is the "Checkout Method" (eg, not when logged in) */
-body:not(.opc-has-progressed-from-login) .opc.opc-firststep-login .section:not(#opc-login) .step-title,
-body:not(.opc-has-progressed-from-login) .opc-block-progress-step-login {
-  opacity: 0; }
-
-body:not(.opc-has-progressed-from-login) .opc.opc-firststep-login .section#opc-login .step-title .number {
-  width: 0px;
-  overflow: hidden; }
-
-body:not(.opc-has-progressed-from-login) .opc.opc-firststep-login .section#opc-login .step-title h2 {
-  margin-left: 0px; }
-
-/* -------------------------------------------- *
- * Shipping and Payment methods
- */
-.sp-methods {
-  margin: 0 0 8px; }
-  .sp-methods dt {
-    margin: 13px 0 5px;
-    font-weight: bold; }
-    .sp-methods dt:first-child {
-      margin: 0 0 5px; }
-  .sp-methods dd li {
-    margin: 5px 0; }
-  .sp-methods label img {
-    float: left; }
-  .sp-methods label a {
-    margin-top: 6px;
-    float: right;
-    margin-left: 10px; }
-  .sp-methods .price {
-    font-weight: bold; }
-  .sp-methods .form-list {
-    padding-left: 20px; }
-    .sp-methods .form-list li {
-      margin: 0 0 8px; }
-  .sp-methods select.month {
-    width: 120px;
-    margin-right: 10px; }
-  .sp-methods select.year {
-    width: 96px; }
-  .sp-methods input.cvv {
-    width: 4em !important; }
-  .sp-methods #advice-validate-cc-exp-ccsave_expiration {
-    max-width: 130px; }
-  .sp-methods .checkmo-list li {
-    margin: 0 0 5px;
-    content: '';
-    display: table;
-    clear: both; }
-  .sp-methods .checkmo-list label {
-    width: 165px;
-    padding-right: 15px;
-    text-align: right;
-    float: left; }
-  .sp-methods .checkmo-list address {
-    float: left; }
-  @media only screen and (max-width: 479px) {
-    .sp-methods .checkmo-list {
-      padding-left: 0; }
-      .sp-methods .checkmo-list label {
-        width: 135px; } }
-  .sp-methods .release-amounts {
-    margin: 0.5em 0; }
-  .sp-methods .release-amounts button {
-    float: left;
-    margin: 5px 10px 0 0; }
-
-/* One Page Checkout */
-.block-progress {
-  border: 0;
-  margin: 0;
-  border-left: 1px solid #CCCCCC;
-  padding-left: 20px; }
-  .block-progress .block-content {
-    font-size: 13px; }
-  .block-progress dt {
-    padding-top: 6px;
-    margin: 0;
-    margin-bottom: 10px;
-    color: #636363;
-    font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
-    font-size: 14px;
-    font-weight: bold;
-    font-style: normal;
-    line-height: 1.4;
-    text-rendering: optimizeSpeed;
-    text-transform: uppercase;
-    margin-bottom: 6px;
-    text-transform: uppercase;
-    font-weight: normal;
-    color: #A0A0A0; }
-  .block-progress dt.complete {
-    color: #636363; }
-  .block-progress dd {
-    padding-left: 15px;
-    margin-bottom: 10px;
-    font-family: Georgia, Times, "Times New Roman", serif;
-    font-style: italic; }
-    .block-progress dd address {
-      font-style: italic; }
-  .block-progress #payment-progress-opcheckout .subtitle {
-    margin-bottom: 3px; }
-  .block-progress .payment-info dt {
-    padding: 0;
-    margin: 0 0 3px 0;
-    color: #636363;
-    font-family: Georgia, Times, "Times New Roman", serif;
-    text-transform: none;
-    font-style: italic;
-    float: left;
-    clear: both;
-    font-size: 13px; }
-    .block-progress .payment-info dt:after {
-      content: ': '; }
-  .block-progress .payment-info dd {
-    float: left;
-    margin-bottom: 3px;
-    font-size: 13px; }
-  .block-progress .payment-info:after {
-    content: '';
-    display: table;
-    clear: both; }
-
-/* review step */
-#checkout-review-table .btn-remove img {
-  display: none; }
-
-#checkout-review-table-wrapper {
-  clear: both; }
-
-#review-buttons-container {
-  width: 100%;
-  margin-top: 15px;
-  margin-bottom: 15px; }
-  #review-buttons-container .btn-checkout {
-    min-width: 220px; }
-  #review-buttons-container .please-wait {
-    float: left;
-    margin-right: 10px; }
-  #review-buttons-container .f-left {
-    float: right; }
-
-@media only screen and (max-width: 599px) {
-  .linearize-table-large.checkout-review-table thead tr:nth-child(1n+2) {
-    display: none; } }
-
-@media only screen and (max-width: 479px) {
-  .linearize-table.checkout-review-table thead tr:nth-child(1n+2) {
-    display: none; } }
-
-/* show/hide "change" link for progress step depend on complete status
- * should be placed in .css file */
-.opc-block-progress dt.complete a,
-.opc-block-progress dt.complete .separator {
-  display: inline; }
-
-.opc-block-progress dt a,
-.opc-block-progress dt .separator {
-  display: none; }
-
-/* On small screens, the progress review content will be moved to the review step via JS. Styled via this CSS: */
-#checkout-step-review .opc-block-progress {
-  border-left: none;
-  padding-left: 0; }
-  #checkout-step-review .opc-block-progress .block-title {
-    display: none; }
-  #checkout-step-review .opc-block-progress .block-content {
-    display: block !important;
-    padding: 0; }
-    #checkout-step-review .opc-block-progress .block-content > dl > div {
-      float: left;
-      width: 50%; }
-    @media only screen and (max-width: 479px) {
-      #checkout-step-review .opc-block-progress .block-content > dl > div {
-        float: none;
-        width: auto; } }
-    #checkout-step-review .opc-block-progress .block-content .changelink {
-      display: none; }
-
-@media only screen and (max-width: 479px) {
-  #checkout-review-table thead > tr > th {
-    display: none; }
-    #checkout-review-table thead > tr > th:first-child {
-      display: block; }
-  #checkout-review-table thead > tr > th:first-child {
-    display: block; } }
-
-#checkout-step-review .centinel > p {
-  margin-bottom: 10px; }
-
-#checkout-step-review .centinel iframe {
-  width: 100%;
-  min-height: 400px; }
-
-/* Gift options */
-.gift-messages-form .item {
-  content: '';
-  display: table;
-  clear: both;
-  margin-top: 30px; }
-  .gift-messages-form .item h5 {
-    font-weight: bold; }
-  .gift-messages-form .item .product-img-box {
-    width: auto;
-    float: left;
-    padding-right: 15px; }
-  .gift-messages-form .item .details {
-    float: left; }
-
-.gift-message-form .inner-box > div {
-  content: '';
-  display: table;
-  clear: both;
-  width: 100%;
-  margin-top: 15px;
-  display: block; }
-  .gift-message-form .inner-box > div.extra-options-container p {
-    margin-bottom: 15px; }
