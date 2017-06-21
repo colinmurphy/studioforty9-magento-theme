@@ -23,22 +23,16 @@
 // @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 //
 
-/* ============================================ *
- * Global
- * ============================================ */
+// ==============================================
+// Maddison Island Specific / No MQ
+// ==============================================
 
-html,
-body {
-    height: 100%;
-}
+$mq-support: false;
+$mq-fixed-value: 1024px;
 
-.wrapper {
-    min-width: 320px;
-    min-height: 100%;
-    margin: 0 auto;
-    background: #FFFFFF;
-}
+@import "framework";
 
-.wrapper:after {
-    @include clearfix;
-}
+// ----------------------------------------------
+// Content
+
+@import "content/home";

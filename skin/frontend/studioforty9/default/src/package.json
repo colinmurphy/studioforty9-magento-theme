@@ -2,7 +2,6 @@
   "devDependencies": {
     "gulp": "*",
     "gulp-autoprefixer": "*",
-    "gulp-bless": "*",
     "gulp-cache": "*",
     "gulp-concat": "*",
     "gulp-jshint": "*",

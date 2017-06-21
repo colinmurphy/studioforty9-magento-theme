@@ -21,20 +21,6 @@
             <action method="addItem">
                 <type>skin_css</type>
                 <url>css/styles.css</url>
-                <params />
-                <if><![CDATA[<!--[if (! IE) ]><!-->]]></if>
-            </action>
-            <action method="addItem">
-                <type>skin_css</type>
-                <url>css/ie9.css</url>
-                <params />
-                <if>IE 9</if>
-            </action>
-            <action method="addItem">
-                <type>skin_css</type>
-                <url>css/ie9-blessed1.css</url>
-                <params />
-                <if>IE 9</if>
             </action>
             <action method="addItem">
                 <type>skin_js</type>

@@ -19,7 +19,7 @@
 //
 // @category    design
 // @package     rwd_default
-// @copyright   Copyright (c) 2006-2015 X.commerce, Inc. (http://www.magento.com)
+// @copyright   Copyright (c) 2006-2017 X.commerce, Inc. and affiliates (http://www.magento.com)
 // @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 //
 
@@ -28,14 +28,13 @@
 // ==============================================
 
 // ----------------------------------------------
-// Compass
-
-//@import "compass";
-//@import "compass/css3";
+// StudioForty9
+@import "vendor/compass";
+@import "vendor/bootstrap";
+@import "../bower_components/font-awesome/scss/font-awesome";
 
 // ----------------------------------------------
 // Vars
-
 @import "var";
 
 // ----------------------------------------------
@@ -44,7 +43,7 @@
 @import "function/black";
 @import "function/white";
 
-// ----------------------------------------------
+//----------------------------------------------
 // Mixins
 
 @import "mixin/breakpoint";

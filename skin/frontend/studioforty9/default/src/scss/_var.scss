@@ -19,7 +19,7 @@
 //
 // @category    design
 // @package     rwd_default
-// @copyright   Copyright (c) 2006-2015 X.commerce, Inc. (http://www.magento.com)
+// @copyright   Copyright (c) 2006-2017 X.commerce, Inc. and affiliates (http://www.magento.com)
 // @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 //
 
@@ -46,11 +46,11 @@ $default-transition-delay: 0;
 // where a min-width is used, remember to +1 to break correctly.
 // If these are changed, they must also be updated in app.js
 
-$bp-xsmall:         479px;
-$bp-small:          599px;
-$bp-medium:         767px;
-$bp-large:          979px;
-$bp-xlarge:         1199px;
+$bp-xsmall: 479px;
+$bp-small: 599px;
+$bp-medium: 770px;
+$bp-large: 979px;
+$bp-xlarge: 1199px;
 
 // =============================================
 // Base Values
@@ -78,6 +78,7 @@ $element-spacing: 7px;
 $max-content-width: 1200px;
 $max-container-width: $trim + $max-content-width + $trim;
 $max-std-formatted-width: 50em;
+
 // =============================================
 // Brand Colors
 // =============================================

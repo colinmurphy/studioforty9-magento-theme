@@ -3,8 +3,6 @@ var
     gulp            = require('gulp'),
     sass            = require('gulp-sass'),
     autoprefixer    = require('gulp-autoprefixer'),
-    bless           = require('gulp-bless'),
-    minifycss       = require('gulp-minify-css'),
     uglify          = require('gulp-uglify'),
     concat          = require('gulp-concat'),
     notify          = require('gulp-notify'),
@@ -12,9 +10,7 @@ var
     livereload      = require('gulp-livereload');
 
 var config = {
-    minifyCss: true,
     uglifyJS: true,
-    compileIE9: true,
     sass: {
         src:  '/scss/**/*.{sass,scss}',
         dest:  '../css',
@@ -41,34 +37,8 @@ gulp.task('css', function() {
         .pipe(autoprefixer('last 10 versions'))
         .pipe(gulp.dest(config.sass.dest));
 
-    if (config.minifyCss === true) {
-        stream.pipe(minifycss());
-    }
-
     stream.pipe(gulp.dest('../css'))
         .pipe(notify({ message: 'Successfully compiled SASS' }));
-
-    if (config.compileIE9 === true) {
-        gulp.start('ie9');
-    }
-
-});
-
-// IE9 CSS
-gulp.task('ie9', function() {
-    var stream = gulp
-        .src('scss/ie9.scss')
-        .pipe(sass(config.sass.options)
-            .on('error', notify.onError(function (error) {
-                cssCompiling = false;
-                return 'Error compiling SASS: ' + error.message;
-            })))
-        .pipe(autoprefixer({
-            browsers: ['last 3 versions'],
-            cascade: false
-        }))
-        .pipe(bless())
-        stream.pipe(gulp.dest('../css'));
 });
 
 // JS
