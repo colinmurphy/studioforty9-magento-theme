@@ -20,6 +20,7 @@
   },
   "extra": {
     "map": [
+      ["bin", "bin"],
       ["app/design/frontend/studioforty9/default", "app/design/frontend/studioforty9/default"],
       ["skin/frontend/studioforty9/default", "skin/frontend/studioforty9/default"]
     ]

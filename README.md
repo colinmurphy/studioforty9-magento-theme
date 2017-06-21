@@ -18,15 +18,16 @@ If you already have (Homebrew)[http://brew.sh/] you run the following:
 
     brew install node
 
-# 2. Setup
+# 2. Installation
 
-Once you have copied the theme in your Magento install you need to download the bower and node packages.
-To do this you need to do the following from your project root:
+There is now a bash script to do the work for you.
 
-    cd skin/frontend/studioforty9/default/src/
-    npm install
-    bower install
+    chmod +x bin/frontend_setup.sh
+    php bin/frontend_setup.sh
     
+Enter in your package and theme and the script will copy the files for you and also setup bower and gulp.
+The only thing you need after this to do is set the package and theme in Magento.
+
 # 3. Gulp
 
 Once you have the theme setup gulp is ready to go using live reload to automatically compile and refresh your CSS and JavaScript files when marking up.
