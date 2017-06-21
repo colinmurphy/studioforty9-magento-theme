@@ -11,7 +11,7 @@ if [ ! -d app/design/frontend/$package/$theme ]; then
   mkdir -p app/design/frontend/$package/$theme
 fi
 
-if [ ! -d skin/frontend/$package/$themee ]; then
+if [ ! -d skin/frontend/$package/$theme ]; then
   mkdir -p skin/frontend/$package/$theme
 fi
 
