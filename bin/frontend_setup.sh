@@ -1,27 +1,49 @@
 #!/usr/bin/env bash
-# This script will test if you have given a leap year or not.
+# This script creates a very basic skeleton Magento theme
 
-echo "Enter your package name [ENTER]:"
-read package
-
-echo "Enter your theme name [ENTER]:"
-read theme
-
-if [ ! -d app/design/frontend/$package/$theme ]; then
-  mkdir -p app/design/frontend/$package/$theme
+if [ ! -d app/design/frontend ]
+then
+	echo Could not find front end design folder in current folder.
+	echo This script is intended to be run from the root of your Magento installations eg. bin/$0
+	exit
 fi
 
-if [ ! -d skin/frontend/$package/$theme ]; then
-  mkdir -p skin/frontend/$package/$theme
+read -p "Enter your package name [ENTER]: " package
+read -p "Enter your theme name [ENTER]: " theme
+
+if [[ -z "$package" ]]
+then
+    echo No package name was specified
+    exit
 fi
 
-cp -rf app/design/frontend/studioforty9/default/ app/design/frontend/$package/$theme/
-echo "Design files copied";
-cp -rf skin/frontend/studioforty9/default/ skin/frontend/$package/$theme/
-echo "Skin files copied. Setting up bower and node";
-cd skin/frontend/$package/$theme/src/
+if [[ -z "$theme" ]]
+then
+    echo No package name was specified
+    exit
+fi
+
+if [ ! -d "app/design/frontend/$package/$theme" ]
+then
+  mkdir -p "app/design/frontend/$package/$theme"
+fi
+
+if [ ! -d "skin/frontend/$package/$theme" ]
+then
+  mkdir -p "skin/frontend/$package/$theme"
+fi
+
+cp -rf app/design/frontend/studioforty9/default/ "app/design/frontend/$package/$theme/"
+echo Design files copied
+
+cp -rf skin/frontend/studioforty9/default/ "skin/frontend/$package/$theme/"
+echo Skin files copied. Setting up bower
+
+cd "skin/frontend/$package/$theme/src/"
+echo Setting up bower and node
+
 bower install
 npm install
 gulp default
 
-echo $package/$theme was created. You now to need to set the theme in the system configuration.;
+echo $package/$theme was created. You now to need to set the theme in the system configuration.
